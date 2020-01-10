@@ -16,8 +16,8 @@ while tries < MAX_TRIES:
         tries += 1
 
     for x in words:
-        if(x == inp):
-            result[count] = inp
+        if(x.casefold() == inp.casefold()):
+            result[count] = inp.upper()
         count = count+1
     print(result)
     print(tries)
